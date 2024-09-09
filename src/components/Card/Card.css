@@ -1,0 +1,103 @@
+.cards__container{
+	width: 100%;
+	max-width: 800px;
+	/* border: 1px solid black; */
+	display: flex;
+	overflow-X:scroll;
+	scrollbar-width: thin;
+	scroll-behavior: smooth;
+}
+
+.card{
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.cards__container::-webkit-scrollbar{
+	height: 10px;
+}
+
+.products{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.products__title{
+	margin: 10px 0px 0px 10px;
+	width: 100%;
+	max-width: 800px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.products__title h2{
+	font-size: 22px;
+	font-weight: 500;
+	color: #3D2216;
+}
+
+.btn__products{
+	margin-right: 10px;
+	width: 80px;
+	height: 25px;
+	border-radius: 5px;
+	border: none;
+	box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	gap: 5px;
+}
+
+
+/* Card.css or Modal.css */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal__content {
+  background: white;
+  width: 100%;
+	max-width: 800px;
+  height: 100%;
+  overflow-y: auto;
+} 
+
+.modal__close {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	background-color: rgba(128, 128, 128, 0.46);
+	z-index: 5s;
+}
+
+.modal__cards__container{
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.modal__box{
+	width: 100%;
+	height:	50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction:row-reverse;
+	padding: 0 10px;
+}

@@ -1,0 +1,16 @@
+.save-container{
+	width: 100%;
+}
+
+
+.save-products{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+}
+
+.save-title{
+	margin: 10px 20px;
+}
